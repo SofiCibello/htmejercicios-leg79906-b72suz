@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio4</title>
+</head>
+<body>
+  <style>
+  body {
+    background-image: url('https://www.todofondos.net/wp-content/uploads/todofondos-colorespasteles13-576x1024.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  </style>
+
+  <h1 style="font-family:verdana;">Ejercicio Formularios en html</h1>
+  <form action="POST">
+    <input name="usu" type="text" placeholder="Usuario o correo electrónico" maxlength="20" required><br><br>
+
+    <input name="clave" type="password" placeholder="Contraseña" maxlength="20" required><br><br>
+
+    <input name="btnIniciarSesion" type="submit" value="Iniciar sesión">
+
+    <input name="btnAlert" type="button" name="alerta" value="Mostrar alerta"
+    onclick="alert('Input type=button  !!')"/>
+    
+    <button name="btnReset" type="reset"> Borrar datos</button>
+  </form>
+  <hr>
+
+
+  <h2 style="font-family:verdana;">Crear cuenta nueva</h2>
+  <h4 style="font-family:verdana;">Registrarte</h4>
+  <h5 style="font-family:verdana;">Es rápido y fácil.</h5>
+  <br>
+  
+  <form action="POST">
+    <label for="">Nombre*  </label><input name="nombre" type="text" placeholder="Ingrese su nombre" maxlength="20" required><br><br>
+
+    <label for="">Apellido*  </label><input name="apellido" type="text" placeholder="Ingrese su apellido" required><br><br>
+
+    <label for="">Número de celular o correo electrónico*  </label><input name="nroCelu" type="text" placeholder="Ingrese su nro de celular" required><br><br>
+
+    <label for="">Contraseña nueva*  </label><input name="claveNueva" type="password" placeholder="Ingrese su contraseña" maxlength="20" required><br><br>
+
+    <label for="">Fecha de nacimiento*  </label><input name="fechaNac" type="date" required><br><br>
+
+    <label for="">Sexo*  </label><br>
+    <input type="radio" name="sexo" value="mujer"> Mujer<br>
+    <input type="radio" name="sexo" value="mujer"> Hombre<br>
+    <input type="radio" name="sexo" value="mujer"> Personalizado<br>
+    <br><br>
+
+    <label for="">Idiomas*  </label><br>
+    <input type="checkbox" name="idioma1" value="ingles" checked> Ingl&eacute;s<br>
+    <input type="checkbox" name="idioma2" value="portugues"> Portugu&eacute;s<br>
+    <input type="checkbox" name="idioma3" value="frances"> Franc&eacute;s<br>
+    <br><br>
+
+    <label for="">Estado civil*  </label><br>
+    <select name="menuEstadoCivil" id="" size="4">
+      <option value="soltero/a" selected>Soltero/a</option>
+      <option value="casado/a">Casado/a</option>
+      <option value="divorciado/a">Divorciado/a</option>
+      <option value="viudo/a">Viudo/a</option>
+    </select>
+    <br><br>
+
+    <textarea name="observaciones" id="" cols="50" rows="5" placeholder="Observaciones.."></textarea>
+    <br><br>
+    <input name="btnRegistrarse" type="submit" value="Registrarse">
+    <button name="btnReset" type="reset"> Borrar datos</button>
+  </form>
+
+  <br>
+  <hr>
+  <div>
+  <a href="/index.html">Volver a la p&aacute;gina de inicio</a>
+  </div>
+</body>
+</html>
